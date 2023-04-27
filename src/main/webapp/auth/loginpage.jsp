@@ -138,7 +138,7 @@ $(function(){
 	$('#btnsignin').on("click", function() {
 	    $.ajax({
 	    	 method : 'POST',
-	        url : '/pyeoni/auth/login.view',
+	        url : 'login.view',
 	        //url : "/auth/login.view",
 	        data : {
 	            "email" : $("#signinemail").val(),

@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-	<div style = " text-align: center">
+	<div style = "text-align: center">
 		<h1>편의점 행사 내역 업데이트</h1>
 		<br>
 		<p>아래 버튼을 클릭하면 모든 편의점의 행사 내역을 크롤링하여</p>

@@ -51,6 +51,7 @@ public class CommentWriteController implements CommonControllerInterface {
 	
 		String brand = request.getParameter("brand");
 		int price = Integer.parseInt(request.getParameter("price"));
+		System.out.println("writeCommentContr "+price);
 		String email = request.getParameter("email");
 		System.out.println(email);
 		

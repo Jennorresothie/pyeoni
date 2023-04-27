@@ -94,7 +94,7 @@ function commentdel(){
 	var commentId = event.target.parentNode.id;
 	$.ajax({
 		method : 'GET',
-		url : '/pyeoni/comment/deleteComment.view',
+		url : '../comment/deleteComment.view',
 		data : {
 			"commentId" : commentId
 			//어떤 댓글을 지울지
@@ -122,7 +122,7 @@ function commentdel(){
 			console.log("a" + prodbrand);
 			$.ajax({
 				method : "POST",
-				url : '/pyeoni/comment/writeComment.view',//댓글컨트롤러----------------------------------------------수정하기
+				url : '../comment/writeComment.view',//댓글컨트롤러----------------------------------------------수정하기
 				data : {
 					"comment" : comment,
 					"product_name" : prodname,
@@ -145,6 +145,7 @@ function commentdel(){
 		}
 
 	});
+	
 	function viewComment() {//댓글 보이게
 		console.log("viewcomment 실행");
 		$('#commentsection').html("");
@@ -156,7 +157,7 @@ function commentdel(){
 		prodprice = prodprice.slice(0, -1);
 		$.ajax({
 			method : 'GET',
-			url : '/pyeoni/comment/selectComment.view',
+			url : '../comment/selectComment.view',
 			data : {
 				"product_name" : prodname,
 				"promotion" : prodpromotion,

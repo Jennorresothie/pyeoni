@@ -3,6 +3,7 @@
 <script>
 	$(function() {
 		$('#exampleModal').on('show.bs.modal', function(event) {
+
 // 			var prodname = $(event.relatedTarget).parent().parent().parent().parent().parent().data('pname');
 // 			var prodpromotion = $(event.relatedTarget).data('ppro');
 // 			var prodprice = $(event.relatedTarget).data('pprice');
@@ -15,6 +16,6 @@
 // 			$("#prodbrand").text(prodbrand);
 // 			$("#modalimg").attr('src', imgurl);
 // 			viewComment();
+
 		});
 	});
-</script>
